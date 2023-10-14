@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: rgb(17, 0, 255);
+    background: rgb(127,58,180);
+    background-image: url(video\ home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(10, 200, 255);
+    width: 120px;
+    padding: 10px 0;
+}
+
+nav .logo{
+    width: 100px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+nav ul{
+    margin-top: 160px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li img{
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s, background-color 0.5s;
+    transition: transform 0.5s;
+}
+
+nav ul li img:hover{
+    opacity: 1;
+    background-color: rgb(1, 39, 255);
+    transform: translateX(10px);
+}
+
+.active{
+    opacity: 1;
+    background-color: rgb(0, 8, 255);
+}
+
+.container{
+    margin-left: 120px;
+    padding: 0 2.5%;
+}
+
+.top-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px 0;
+}
+
+.top-icons img{
+    width: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.col-1{
+    flex-basis: 65%;
+}
+
+video {
+    width: 100%;
+    height: 85%;
+    background-color: rgba(21, 21, 21, 0.629);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.col-2{
+    flex-basis: 23%;
+}
+
+#remote-videos h3{
+    position: relative;
+    top: -235px;
+    left: 250px;
+    font-size: 3em;
+    color: rgba(255, 254, 254, 0.6);
+}
+ video #host-img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls img{
+    width: 40px;
+    margin: 20px 10px;
+    cursor: pointer;
+    background-color: rgba(17, 0, 255, 0.673);
+    border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+.controls #call-icon{
+    width: 80px;
+}
+
+.controls img:hover{
+    transform: translateY(-10px);
+}
+
+.join{
+    background-color: rgb(100, 100, 100);
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: white;
+}
+
+.join div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.join img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.invite{
+    background-color: rgb(89, 80, 198);
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: white;
+    margin-top: 20px;
+}
+
+.invite img{
+    margin-top: 20px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.invite img:hover{
+        transform: translateY(-10px);
+}
