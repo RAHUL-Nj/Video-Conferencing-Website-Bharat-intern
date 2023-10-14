@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <title>Video Conferencing Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="Video-call lobo.png" class="logo">
+            <ul>
+                <li><img src="images/live.png" class="active"></li>
+                <li><img id="recordButton" src="images/video.png"></li>
+                <li><img src="images/message.png"></li>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/users.png"></li>
+                <li><img src="images/setting.png"></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="top-icons">
+                <img src="images/search.png">
+                <img src="images/menu.png">
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <video id="local-video" autoplay muted>
+                       
+                    </video>
+                    <div id="remote-videos">
+                        <!-- <h3>Hello World</h3> -->
+                    </div>
+                    
+                    <img id="host-img" src="user logo.jpg">
+
+                    <div class="controls">
+                        <img id="chat" src="images/chat.png">
+                        <img id="disconnect" src="images/disconnect.png">
+                        <img id="call-icon" src="images/call.png">
+                        <img id="mic" src="images/mic.png" alt="">
+                        <img id="chat" src="images/chat.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="join">
+                        <p>People Joind</p>
+                        <div>
+                            <img src="people-1.png">
+                            <img src="images/people-2.png">
+                            <img src="images/people-3.png">
+                            <img src="images/people-4.png">
+                            <img src="images/people-5.png">
+                           
+                        </div>
+                    </div>
+
+                    <div class="invite">
+                        <p>Invite</p>
+                        <div>
+                            <img src="images/user-1.png" alt="">
+                            <img src="images/user-2.png" alt="">
+                            <img src="images/user-3.png" alt="">
+                            <img src="images/user-4.png" alt="">
+                            <img src="images/user-5.png" alt="">
+                            <img src="unnamed.png" alt="">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
